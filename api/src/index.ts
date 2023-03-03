@@ -17,7 +17,7 @@ server.use(morgan("dev"));
 
 //Admitir llamados del front
 server.use((_req, res, next) => {
-  res.header("Access-Control-Allow-Origin", CLIENT_URL); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Origin", "*"); // update to match the domain you will make the request from
   res.header("Access-Control-Allow-Credentials", "true");
   res.header(
     "Access-Control-Allow-Headers",
