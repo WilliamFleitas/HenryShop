@@ -1,8 +1,11 @@
-{
+{"name": "api",
+"version": "1.0.0",
+"description": "",
+"main": "index.js",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "ts-node-dev src/index.ts",
     "start": "node build/index.js",
-    "tsc": "tsc"
+    "build": "tsc"
   },
   "dependencies": {
     "@types/fs-extra": "^9.0.13",
